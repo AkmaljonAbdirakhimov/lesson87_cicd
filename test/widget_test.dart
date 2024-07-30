@@ -3,7 +3,7 @@ import 'package:lesson87_cicd/main.dart';
 
 void main() {
   testWidgets("My App Test", (tester) async {
-    tester.pumpWidget(const MainApp());
+    await tester.pumpWidget(const MainApp());
     expect(find.text("Salom, CI/CD!"), findsOneWidget);
   });
 }
